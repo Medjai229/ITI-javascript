@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registeration</title>
+    <script src="fname.js" defer></script>
+  </head>
+  <body>
+    <!-- *heading -->
+    <h1 style="text-align: center">Registeration</h1>
+
+    <!-- *form -->
+    <form action="thankyou.html" method="get">
+      <!-- !User ID -->
+      <!-- <label for="">User ID</label> -->
+      <input type="text" name="user_id" value="123" hidden />
+
+      <!-- *First name -->
+      <label for="fname">First Name :</label>
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        placeholder="Enter your first name..."
+        required
+      />
+
+      <!-- *Last name -->
+      <br />
+      <label for="lname">Last Name :</label>
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        placeholder="Enter your Last name..."
+        required
+      />
+
+      <!-- *Email -->
+      <br />
+      <label for="email">Email :</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email..."
+        required
+      />
+
+      <!-- *Password -->
+      <br />
+      <label for="pswd">Password:</label>
+      <input
+        type="password"
+        id="pswd"
+        name="password"
+        placeholder="Enter your password..."
+        pattern="[A-Za-z]{8}"
+      />
+      <br />
+      <label for="pswd2">Repeat Password:</label>
+      <input
+        type="password"
+        id="pswd2"
+        name="password2"
+        placeholder="Enter your password again..."
+        pattern="[A-Za-z]{8}"
+      />
+
+      <!-- *Birth date -->
+      <br />
+      <label for="dob">Birth Date :</label>
+      <input
+        type="date"
+        id="dob"
+        name="dob"
+        min="1920-01-01"
+        max="2030-01-01"
+      />
+
+      <!-- *User picture -->
+      <br />
+      <label for="pic">User Picture :</label>
+      <input type="file" id="pic" name="pic" />
+
+      <!-- *Gender (radio) -->
+      <br />
+      <label for="">Gender :</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">female</label>
+
+      <!-- *Faculty (droplist) -->
+      <br />
+      <label for="fac">Faculty :</label>
+      <select name="faculty" id="fac">
+        <option value="" selected disabled>Select your faculty...</option>
+        <option value="CS">Computer Science</option>
+        <option value="Eng">Engineering</option>
+        <option value="Art">Arts</option>
+      </select>
+
+      <!-- *Interests (checkbox) -->
+      <br />
+      <p>Interests :</p>
+      <input type="checkbox" name="interest" value="coding" />
+      <label for="">coding</label>
+      <input type="checkbox" name="interest" value="reading" />
+      <label for="">reading</label>
+      <input type="checkbox" name="interest" value="video games" />
+      <label for="">video games</label>
+      <input type="checkbox" name="interest" value="going out" />
+      <label for="">going out</label>
+      <input type="checkbox" name="interest" value="working out" />
+      <label for="">working out</label>
+
+      <!-- *About you (text area) -->
+      <br />
+      <label for="about">About you:</label>
+      <br />
+      <textarea
+        name="about"
+        id="about"
+        cols="50"
+        rows="10"
+        placeholder="Tell us a brief about yourself..."
+      ></textarea>
+
+      <!-- *Terms & Conditions -->
+      <!-- ! Task 6 Day 6 -->
+      <br />
+      <label for="terms"
+        >I agreed to the
+        <a href="terms.html" target="_blank" tabindex="1"
+          >terms and conditions</a
+        ></label
+      >
+      <input
+        type="checkbox"
+        name="agreed"
+        id="terms"
+        value="true"
+        tabindex="2"
+      />
+
+      <!-- *Submit & Reset -->
+      <br />
+      <input type="submit" accesskey="s" />
+      <input type="reset" accesskey="r" />
+    </form>
+  </body>
+</html>
