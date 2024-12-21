@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip of the day</title>
+    <script src="tips.js" defer></script>
+  </head>
+  <body>
+    <h2>Tip of the day</h2>
+    <p id="tip"></p>
+    <button id="btntime">Show current date and time</button>
+    <span id="showtime"></span>
+    <br />
+
+    <!-- * Task 5 -->
+    <form action="">
+      <label for="user_name">Full name: </label>
+      <input
+        type="text"
+        id="user_name"
+        pattern="^([a-zA-Z]{3,}[\u0020])+[a-zA-Z]{3,}$"
+        required
+      />
+      <br />
+      <!-- * Bouns Task 2 -->
+      <label for="phone_number">Phone Number: </label>
+      <input
+        type="text"
+        id="phone_number"
+        pattern="^(00201)[0125][0-9]{8}"
+        required
+      />
+      <br />
+      <input type="submit" value="Validate" />
+    </form>
+
+    <button id="btndate">Show Date</button>
+    <span id="showdate"></span>
+    <br />
+
+    <button id="btnday">Show Day</button>
+    <span id="showday"></span>
+  </body>
+</html>
